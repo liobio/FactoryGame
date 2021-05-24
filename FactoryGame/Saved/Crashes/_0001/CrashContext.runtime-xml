@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<CrashGUID>_0001</CrashGUID>
+		<ProcessId>14380</ProcessId>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsSourceDistribution>false</IsSourceDistribution>
+		<IsEnsure>false</IsEnsure>
+		<IsAssert>true</IsAssert>
+		<CrashType>Assert</CrashType>
+		<SecondsSinceStart>0</SecondsSinceStart>
+		<GameName />
+		<ExecutableName />
+		<BuildConfiguration>Shipping</BuildConfiguration>
+		<GameSessionID />
+		<PlatformName />
+		<PlatformNameIni />
+		<EngineMode>Game</EngineMode>
+		<EngineModeEx>Unset</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>4.20.3-96463+++FactoryGame+rel-main-ea-slim</EngineVersion>
+		<CommandLine />
+		<LanguageLCID>0</LanguageLCID>
+		<AppDefaultLocale />
+		<BuildVersion>++FactoryGame+rel-main-ea-slim-CL-96463</BuildVersion>
+		<IsUE4Release>false</IsUE4Release>
+		<UserName>LIOBIO</UserName>
+		<BaseDir />
+		<RootDir />
+		<MachineId />
+		<LoginId>8b0dcf374dd4b58edfe1dab22edd0ef1</LoginId>
+		<EpicAccountId />
+		<CallStack>FactoryGame_Win64_Shipping!FDebug::AssertFailed() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\core\private\misc\assertionmacros.cpp:437]
+FactoryGame_Win64_Shipping!FPakFile::Initialize() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:3921]
+FactoryGame_Win64_Shipping!FPakFile::FPakFile() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:3845]
+FactoryGame_Win64_Shipping!FPakPlatformFile::Mount() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:4783]
+FactoryGame_Win64_Shipping!FPakPlatformFile::MountAllPakFiles() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:4979]
+FactoryGame_Win64_Shipping!FPakPlatformFile::Initialize() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:4749]
+FactoryGame_Win64_Shipping!LaunchCheckForFileOverride() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\launchengineloop.cpp:640]
+FactoryGame_Win64_Shipping!FEngineLoop::PreInit() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\launchengineloop.cpp:1096]
+FactoryGame_Win64_Shipping!GuardedMain() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\launch.cpp:127]
+FactoryGame_Win64_Shipping!GuardedMainWrapper() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\windows\launchwindows.cpp:144]
+FactoryGame_Win64_Shipping!WinMain() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\windows\launchwindows.cpp:223]
+FactoryGame_Win64_Shipping!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:253]
+kernel32
+ntdll</CallStack>
+		<PCallStack>FactoryGame-Win64-Shipping 0x0000000013130000 + 2334ef0 FactoryGame-Win64-Shipping 0x0000000013130000 + 23248bc FactoryGame-Win64-Shipping 0x0000000013130000 + 2338173 FactoryGame-Win64-Shipping 0x0000000013130000 + 2338cac FactoryGame-Win64-Shipping 0x0000000013130000 + 2335356 FactoryGame-Win64-Shipping 0x0000000013130000 + 2c17fe FactoryGame-Win64-Shipping 0x0000000013130000 + 2c3fc2 FactoryGame-Win64-Shipping 0x0000000013130000 + 2c100a FactoryGame-Win64-Shipping 0x0000000013130000 + 2c126a FactoryGame-Win64-Shipping 0x0000000013130000 + 2c98cf FactoryGame-Win64-Shipping 0x0000000013130000 + 2d69cd7 KERNEL32 0x0000000007b90000 + 17034 ntdll 0x0000000007e10000 + 52651</PCallStack>
+		<SourceContext />
+		<UserDescription />
+		<UserActivityHint />
+		<ErrorMessage>Fatal error: [File:C:\Jenkins\workspace\I_BuildVersion-staging\UE4\Engine\Source\Runtime\PakFile\Private\IPlatformFilePak.cpp] [Line: 3920] Invalid pak file version (7) in &apos;../../../FactoryGame/Content/Paks/FactoryGame-WindowsNoEditor_p.pak&apos;. Verify your installation.</ErrorMessage>
+		<CrashDumpMode>0</CrashDumpMode>
+		<CrashReporterMessage />
+		<Misc.NumberOfCores>0</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>0</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor />
+		<Misc.CPUBrand />
+		<Misc.PrimaryGPUBrand />
+		<Misc.OSVersionMajor />
+		<Misc.OSVersionMinor />
+		<GameStateName />
+		<MemoryStats.TotalPhysical>17112576000</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>16</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>11589193728</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>140732733931520</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>187564032</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>187568128</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>175775744</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>176099328</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<TimeOfCrash>637574624640890000</TimeOfCrash>
+		<bAllowToBeContacted>0</bAllowToBeContacted>
+		<PlatformFullName />
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+		<Modules>E:\BaiduNetdiskDownload\3DMGAME_Satisfactory_Early_Access.CHS.Green\SatisfactoryEarlyAccess\FactoryGame\Binaries\Win64\FactoryGame-Win64-Shipping.exe
+E:\BaiduNetdiskDownload\3DMGAME_Satisfactory_Early_Access.CHS.Green\SatisfactoryEarlyAccess\FactoryGame\Binaries\Win64\dbgcore.dll</Modules>
+	</RuntimeProperties>
+	<PlatformProperties>
+		<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+	</PlatformProperties>
+</FGenericCrashContext>

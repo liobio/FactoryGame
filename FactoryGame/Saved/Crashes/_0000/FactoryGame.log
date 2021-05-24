@@ -1,0 +1,26 @@
+Found Pak file ../../../FactoryGame/Content/Paks/FactoryGame-WindowsNoEditor_p.pak attempting to mount.
+Mounting pak file ../../../FactoryGame/Content/Paks/FactoryGame-WindowsNoEditor_p.pak.
+=== Handled ensure: ===
+
+Ensure condition failed: DecryptedMasterSignature.Data == OriginalSignatureFileHash [File:C:\Jenkins\workspace\I_BuildVersion-staging\UE4\Engine\Source\Runtime\PakFile\Private\SignedArchiveReader.cpp] [Line: 57]
+
+Stack: 
+[Callstack] 0x00007ff713c0d1f6 FactoryGame-Win64-Shipping.exe!FWindowsPlatformStackWalk::StackWalkAndDump() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\core\private\windows\windowsplatformstackwalk.cpp:236]
+[Callstack] 0x00007ff713c0e63d FactoryGame-Win64-Shipping.exe!FDebug::EnsureFailed() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\core\private\misc\assertionmacros.cpp:322]
+[Callstack] 0x00007ff713c0ee46 FactoryGame-Win64-Shipping.exe!FDebug::OptionallyLogFormattedEnsureMessageReturningFalseImpl() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\core\private\misc\assertionmacros.cpp:448]
+[Callstack] 0x00007ff715453639 FactoryGame-Win64-Shipping.exe!FChunkCacheWorker::FChunkCacheWorker() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\signedarchivereader.cpp:64]
+[Callstack] 0x00007ff71547119b FactoryGame-Win64-Shipping.exe!FPakFile::SetupSignedPakReader() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:3894]
+[Callstack] 0x00007ff715463c1d FactoryGame-Win64-Shipping.exe!FPakFile::GetSharedReader() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:4500]
+[Callstack] 0x00007ff71545488a FactoryGame-Win64-Shipping.exe!FPakFile::FPakFile() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:3839]
+[Callstack] 0x00007ff715468173 FactoryGame-Win64-Shipping.exe!FPakPlatformFile::Mount() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:4783]
+[Callstack] 0x00007ff715468cac FactoryGame-Win64-Shipping.exe!FPakPlatformFile::MountAllPakFiles() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:4979]
+[Callstack] 0x00007ff715465356 FactoryGame-Win64-Shipping.exe!FPakPlatformFile::Initialize() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\pakfile\private\iplatformfilepak.cpp:4749]
+[Callstack] 0x00007ff7133f17fe FactoryGame-Win64-Shipping.exe!LaunchCheckForFileOverride() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\launchengineloop.cpp:640]
+[Callstack] 0x00007ff7133f3fc2 FactoryGame-Win64-Shipping.exe!FEngineLoop::PreInit() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\launchengineloop.cpp:1096]
+[Callstack] 0x00007ff7133f100a FactoryGame-Win64-Shipping.exe!GuardedMain() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\launch.cpp:127]
+[Callstack] 0x00007ff7133f126a FactoryGame-Win64-Shipping.exe!GuardedMainWrapper() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\windows\launchwindows.cpp:144]
+[Callstack] 0x00007ff7133f98cf FactoryGame-Win64-Shipping.exe!WinMain() [c:\jenkins\workspace\i_buildversion-staging\ue4\engine\source\runtime\launch\private\windows\launchwindows.cpp:223]
+[Callstack] 0x00007ff715e99cd7 FactoryGame-Win64-Shipping.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:253]
+[Callstack] 0x00007ff807ba7034 KERNEL32.DLL!UnknownFunction []
+[Callstack] 0x00007ff807e62651 ntdll.dll!UnknownFunction []
+
